@@ -1,6 +1,5 @@
 package com.karabiner.notesapp.controller;
 
-import com.karabiner.notesapp.entity.Notes;
 import com.karabiner.notesapp.entity.User;
 import com.karabiner.notesapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @CrossOrigin("*")
@@ -57,9 +55,4 @@ public class UserController {
         map.put("message", "The username does not exist, please register to continue");
         return new ResponseEntity<>(map, HttpStatus.METHOD_NOT_ALLOWED);
     }
-
-
-
-
-
 }

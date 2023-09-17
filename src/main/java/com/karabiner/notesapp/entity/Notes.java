@@ -1,5 +1,6 @@
 package com.karabiner.notesapp.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -24,6 +25,7 @@ public class Notes {
     @Column(length = 500)
     private String userNotes;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(
             name = "user_id",
