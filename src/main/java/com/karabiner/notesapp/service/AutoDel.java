@@ -15,9 +15,6 @@ public class AutoDel {
 
     @Autowired
     private UserRepository userRepository;
-
-
-
     @Autowired
     private NotesRepository notesRepository;
 
@@ -35,5 +32,4 @@ public class AutoDel {
             }
         }
     }
-
 }

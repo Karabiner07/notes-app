@@ -35,8 +35,6 @@ public class UserController {
     @PostMapping("/api/login")
     public ResponseEntity<Object> loginUser(@RequestBody User user){
 
-
-
         Map<String, Object> map = new HashMap<>();
         if(userService.existsUserByUserName(user.getUserName())){
 

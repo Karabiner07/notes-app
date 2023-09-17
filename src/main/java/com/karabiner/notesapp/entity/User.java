@@ -15,14 +15,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
     private String userName;
-
-    /*@OneToMany
-    @JoinColumn(
-            name = "user_id",
-            referencedColumnName = "userId"
-    )
-    private List<Notes> notes;*/
-
     private String userPass;
 
     public Long getUserId() {

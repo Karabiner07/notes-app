@@ -1,8 +1,6 @@
 package com.karabiner.notesapp.controller;
 
 import com.karabiner.notesapp.entity.Notes;
-import com.karabiner.notesapp.entity.User;
-import com.karabiner.notesapp.model.NotesDTO;
 import com.karabiner.notesapp.service.AutoDel;
 import com.karabiner.notesapp.service.NotesService;
 import jakarta.validation.Valid;
